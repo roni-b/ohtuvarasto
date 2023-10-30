@@ -61,7 +61,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_otetaan_kaikki_varastosta(self):
         self.varasto.ota_varastosta(1)
-        self.assertEqual(self.varasto.saldo, 0)
+        self.assertEqual(self.varasto.saldo, 10)
 
     def test_tulostaa_tiedot_oikein(self):
         varasto = Varasto(10)
