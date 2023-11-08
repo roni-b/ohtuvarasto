@@ -65,6 +65,6 @@ class TestVarasto(unittest.TestCase):
 
     def test_tulostaa_tiedot_oikein(self):
         varasto = Varasto(10)
-        odotettu_merkkijono = f"saldo = {varasto.saldo}, \
-            vielä tilaa {varasto.paljonko_mahtuu()}"
+        odotettu_merkkijono = (f"saldo = {varasto.saldo}, "
+                               f"vielä tilaa {varasto.paljonko_mahtuu()}")
         self.assertEqual(str(varasto), odotettu_merkkijono)
